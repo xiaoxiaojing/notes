@@ -25,7 +25,8 @@ module.exports = {
         filename: "bundle.js"
     }
 };
-	```
+```
+
 * 并且在package.json中配置
 ```
  "scripts": {
