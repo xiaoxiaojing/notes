@@ -13,26 +13,26 @@
 
 ### 配置
 * 根据文档描述，是需要配置publicPath的。所以webpack.config.js配置为
-	```
-	module.exports = {
-	    context: __dirname + "/app",
-	    entry: [
-	        "./entry"
-	    ],
-	    output: {
-	        path: __dirname + "/build",
-	        publicPath: "/build",
-	        filename: "bundle.js"
-	    }
-	};
+```
+module.exports = {
+    context: __dirname + "/app",
+    entry: [
+        "./entry"
+    ],
+    output: {
+        path: __dirname + "/build",
+        publicPath: "/build",
+        filename: "bundle.js"
+    }
+};
 	```
 * 并且在package.json中配置
-	```
-	 "scripts": {
-	    "iframe-start": "webpack-dev-server",
-	    "inline-start": "webpack-dev-server --inline"
-	  },
-	```
+```
+ "scripts": {
+    "iframe-start": "webpack-dev-server",
+    "inline-start": "webpack-dev-server --inline"
+  },
+```
 
 ### 运行
 > The webpack-dev-server supports multiple modes to automatic refresh the page:
